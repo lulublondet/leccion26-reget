@@ -24,16 +24,18 @@ body {
 }
 
 fieldset {
-  width: 60%;	
+  width: 50%;	
 	margin:0 auto;
 	border: 1px solid black; 
+	font-size: 1.2em;
 }
 input {
 	display: inline-block;	
 	width: 	500px;
+	font-size: 0.8em;	
 }
 
 
 fieldset.datos-personales {
-	width: 	700px;
+
 }

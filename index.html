@@ -13,17 +13,17 @@
 		   				<legend>Datos Personales</legend>	
 					<div>		
 						<label >Nombre:
-							<input type="text" id="first-name" name="first-name" required maxlength="40" placeholder="Ingrese su nombre">	
+							<input type="text" id="first-name" name="first-name" required  maxlength="30" placeholder="Ingrese su nombre" pattern="[A-Z]{1}[a-z]*$" title="La primera letra debe ser mayúscula">	
 						</label>
 					</div>
 					<div>	
 						<label >Apellido:
-							<input type="text" id="last-name" name="last-name" required maxlength="40" placeholder="Ingrese su apellido"> 	
+							<input type="text" id="last-name" name="last-name" required maxlength="30" placeholder="Ingrese su apellido" pattern="[A-Z]{1}[a-z]*$" title="La primera letra debe ser mayúscula"> 	
 						</label>
 					</div>
 					<div>	
 						<label >DNI:
-							<input type="text" id="dni" name="dni" required maxlength="8" placeholder="Ingrese su dni"> 	
+							<input type="text" id="dni" name="dni" required maxlength="8" placeholder="Ingrese su dni" pattern="[0-9]{8}"> 	
 						</label>
 					</div>
 				</fieldset>	
@@ -31,16 +31,16 @@
 						<legend>Fecha de Nacimiento</legend>	
 					<div>						
 						<label>Dia:
-							<input type="number" id="day-birthday" name="day-birthday" required maxlength="2" placeholder="dd">
+							<input type="number" id="day-birthday" name="day-birthday" required maxlength="2" placeholder="dd" pattern="\d{2}" >
 						</label>
 					</div>	
 					<div>	
 						<label>Mes:
-								<input type="number" id="month-birthday" name="month-birthday" required maxlength="2" placeholder="mm">
+								<input type="number" id="month-birthday" name="month-birthday" required maxlength="2" placeholder="mm" pattern="\d{2}">
 						</label>
 					<div>			
 						<label>Año:
-								<input type="number" id="year-birthday" name="year-birthday" required maxlength="4" placeholder="yyyy">
+								<input type="number" id="year-birthday" name="year-birthday" required maxlength="4" placeholder="yyyy" pattern="\d{4}" >
 						</label>
 					</div>
 				</fieldset>
@@ -49,12 +49,12 @@
 				<legend>Telefonos</legend>
 				<div>	
 				<label>Teléfono:
-					<input type="tel" id="phone1" name="phone1" required maxlength="7" placeholder="Ejm:555-55555">
+					<input type="tel" id="phone1" name="phone1" required maxlength="7" placeholder="Ejm:5555555" pattern="\d{7}">
 				</label>
 				</div>
 				<div>	
 				<label>Celular:
-					<input type="tel" id="phone2" name="phone2" required maxlength="9" placeholder="999-999999">	
+					<input type="tel" id="phone2" name="phone2" required maxlength="9" placeholder="999999999" pattern="\d{9}">	
 				</label>
 				</div>	
 				</fieldset>		
@@ -63,7 +63,7 @@
 				<legend>Login</legend>
 				<div>		
 					<label>Contraseña
-						<input type="password" id="password" name="password" required placeholder="Ingrese su password">
+						<input type="password" id="password" name="password" required placeholder="Ingrese su password" pattern="^\S{6,}$" minlength="6" title="minimo son 6 caracteres">
 					</label>
 				</div>
 				<div>				
@@ -76,17 +76,17 @@
 				<fieldset>	
 					<legend>Sugerencias o Comentarios</legend>
 						<label for="">
-							<input type="text">		
+							<textarea name="" id="" cols="80" rows="8"></textarea>		
 						</label>
 				</fieldset>
 				<div class="terminos-condiciones">	
 
 						<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut iste doloribus sed sequi ipsum dolor dicta aperiam voluptatum, asperiores repudiandae natus et quos reprehenderit consequatur minima non nostrum aliquid, excepturi.</p>
 						<label for="	">Términos y Condiciones
-							<input type="checkbox">
+							<input type="checkbox"  required>
 						</label>
 				</div>
-				<input type="submit" id="submit"  name="submit">		
+				<input type="submit" id="submit"  name="submit" value="enviar">		
 
 		</fieldset>
 	</form>
