@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Regets</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<form action="" method="" name="form">
+		<fieldset class="registro-usuario">
+		   <legend>Registro del Usuario</legend>	
+		   		<fieldset class="datos-personales">
+		   				<legend>Datos Personales</legend>	
+					<div>		
+						<label >Nombre:
+							<input type="text" id="first-name" name="first-name" required maxlength="40" placeholder="Ingrese su nombre">	
+						</label>
+					</div>
+					<div>	
+						<label >Apellido:
+							<input type="text" id="last-name" name="last-name" required maxlength="40" placeholder="Ingrese su apellido"> 	
+						</label>
+					</div>
+					<div>	
+						<label >DNI:
+							<input type="text" id="dni" name="dni" required maxlength="8" placeholder="Ingrese su dni"> 	
+						</label>
+					</div>
+				</fieldset>	
+					<fieldset class="fecha-nacimiento">
+						<legend>Fecha de Nacimiento</legend>	
+					<div>						
+						<label>Dia:
+							<input type="number" id="day-birthday" name="day-birthday" required maxlength="2" placeholder="dd">
+						</label>
+					</div>	
+					<div>	
+						<label>Mes:
+								<input type="number" id="month-birthday" name="month-birthday" required maxlength="2" placeholder="mm">
+						</label>
+					<div>			
+						<label>Año:
+								<input type="number" id="year-birthday" name="year-birthday" required maxlength="4" placeholder="yyyy">
+						</label>
+					</div>
+				</fieldset>
+
+				<fieldset class="telefonos">	
+				<legend>Telefonos</legend>
+				<div>	
+				<label>Teléfono:
+					<input type="tel" id="phone1" name="phone1" required maxlength="7" placeholder="Ejm:555-55555">
+				</label>
+				</div>
+				<div>	
+				<label>Celular:
+					<input type="tel" id="phone2" name="phone2" required maxlength="9" placeholder="999-999999">	
+				</label>
+				</div>	
+				</fieldset>		
+				
+				<fieldset>		
+				<legend>Login</legend>
+				<div>		
+					<label>Contraseña
+						<input type="password" id="password" name="password" required placeholder="Ingrese su password">
+					</label>
+				</div>
+				<div>				
+					<label >Confirme Contraseña
+							<input type="password" id="confirm-password" name="confirm-password" required placeholder="reingrese su password">
+						
+					</label>	
+				</div>
+				</fieldset>		
+				<fieldset>	
+					<legend>Sugerencias o Comentarios</legend>
+						<label for="">
+							<input type="text">		
+						</label>
+				</fieldset>
+				<div class="terminos-condiciones">	
+
+						<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut iste doloribus sed sequi ipsum dolor dicta aperiam voluptatum, asperiores repudiandae natus et quos reprehenderit consequatur minima non nostrum aliquid, excepturi.</p>
+						<label for="	">Términos y Condiciones
+							<input type="checkbox">
+						</label>
+				</div>
+				<input type="submit" id="submit"  name="submit">		
+
+		</fieldset>
+	</form>
+</body>
+</html>
